@@ -1,13 +1,22 @@
 {
-  "name": "onlyrealty",
+  "name": "17-chelmsford-avenue-mill-park",
   "version": "1.0.0",
-  "private": true,
-  "description": "Static listing site for 17 Chelmsford Avenue — local preview helper",
+  "description": "Official sole-mandate property listing and income-producing cottage portfolio for 17 Chelmsford Avenue, Mill Park, Gqeberha by Only Realty Property Group.",
+  "main": "index.html",
   "scripts": {
-    "preview": "serve -s . -l 3000",
-    "preview:port": "serve -s . -l $PORT"
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000"
   },
-  "devDependencies": {
-    "serve": "^14.2.0"
-  }
+  "keywords": [
+    "real-estate",
+    "mill-park",
+    "gqeberha",
+    "port-elizabeth",
+    "only-realty",
+    "property-for-sale",
+    "chelmsford-cottage"
+  ],
+  "author": "Jacques La Grange <jacques@onlyrealty.co.za>",
+  "license": "UNLICENSED",
+  "private": true
 }
