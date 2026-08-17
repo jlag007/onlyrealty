@@ -32,29 +32,53 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          brand: {
-            blue: '#001649',
-            maroon: '#a83052',
-            light: '#F8F9FA',
-            dark: '#111827',
-            whatsapp: '#25D366'
-          }
-        },
-        fontFamily: {
-          sans: ['Montserrat', 'sans-serif'],
-          serif: ['Source Serif 4', 'serif'],
-        }
-      }
-    }
+<!-- Production Pre-compiled CSS (Zero Console Warnings & Instant Render) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+<style>
+  :root {
+    --brand-blue: #001649;
+    --brand-maroon: #a83052;
+    --brand-light: #F8F9FA;
+    --brand-dark: #111827;
+    --brand-whatsapp: #25D366;
   }
-</script>
+  
+  body {
+    background-color: var(--brand-light);
+    color: var(--brand-dark);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+
+  .bg-brand-blue { background-color: var(--brand-blue); }
+  .text-brand-blue { color: var(--brand-blue); }
+  .border-brand-blue { border-color: var(--brand-blue); }
+
+  .bg-brand-maroon { background-color: var(--brand-maroon); }
+  .text-brand-maroon { color: var(--brand-maroon); }
+  .border-brand-maroon { border-color: var(--brand-maroon); }
+
+  .bg-brand-whatsapp { background-color: var(--brand-whatsapp); }
+  .text-brand-whatsapp { color: var(--brand-whatsapp); }
+
+  .hide-scrollbar::-webkit-scrollbar { display: none; }
+  .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  .active-filter {
+    background-color: var(--brand-blue) !important;
+    color: #ffffff !important;
+    border-color: var(--brand-blue) !important;
+  }
+
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+</style>
 
 <!-- Structured Data Schema for SEO and Search Visibility -->
 <script type="application/ld+json">
