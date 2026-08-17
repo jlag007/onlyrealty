@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://www.chelmsfordcottage.co.za/for-sale/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jmztkqukornrftdbeyto.supabase.co/storage/v1/object/public/property-images/17-chelmsford-avenue-mill-park-exterior-front-01.jpg</image:loc>
+      <image:title>17 Chelmsford Avenue Mill Park Front View</image:title>
+      <image:caption>Full title 4-bedroom family home for sale in Mill Park, Gqeberha</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://jmztkqukornrftdbeyto.supabase.co/storage/v1/object/public/property-images/17-chelmsford-avenue-mill-park-swimming-pool-01.jpg</image:loc>
+      <image:title>Swimming pool at 17 Chelmsford Avenue</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jmztkqukornrftdbeyto.supabase.co/storage/v1/object/public/property-images/17-chelmsford-avenue-mill-park-four-4-car-garage-workshop-01.jpg</image:loc>
+      <image:title>Four-car garage and workshop</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://jmztkqukornrftdbeyto.supabase.co/storage/v1/object/public/property-images/17-chelmsford-avenue-mill-park-exterior-front-01.jpg</video:thumbnail_loc>
+      <video:title>17 Chelmsford Avenue Mill Park Property Tour</video:title>
+      <video:description>Full walkthrough video of 17 Chelmsford Avenue Mill Park Gqeberha</video:description>
+      <video:content_loc>https://jmztkqukornrftdbeyto.supabase.co/storage/v1/object/public/property-images/Chelmsford%20Avenue%20_%20Millpark%20_%20Port%20Elizabeth%20_%20Gqaberha%20(1)%20(1).mp4</video:content_loc>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/pGl1ophtSMM</video:player_loc>
+    </video:video>
+  </url>
+</urlset>
