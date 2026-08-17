@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /for-sale/
+
+Sitemap: https://www.chelmsfordcottage.co.za/sitemap.xml
