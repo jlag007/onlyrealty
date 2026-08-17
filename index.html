@@ -32,7 +32,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- Production Pre-compiled CSS (Zero Console Warnings & Instant Render) -->
+<!-- Production Stylesheet (Zero Console Warnings + Full Tailwind v3 Parity) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 
 <style>
@@ -47,23 +47,52 @@
   body {
     background-color: var(--brand-light);
     color: var(--brand-dark);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
   .font-serif {
     font-family: 'Source Serif 4', Georgia, serif;
   }
 
-  .bg-brand-blue { background-color: var(--brand-blue); }
-  .text-brand-blue { color: var(--brand-blue); }
-  .border-brand-blue { border-color: var(--brand-blue); }
+  /* Brand Colors */
+  .bg-brand-blue { background-color: var(--brand-blue) !important; }
+  .text-brand-blue { color: var(--brand-blue) !important; }
+  .border-brand-blue { border-color: var(--brand-blue) !important; }
 
-  .bg-brand-maroon { background-color: var(--brand-maroon); }
-  .text-brand-maroon { color: var(--brand-maroon); }
-  .border-brand-maroon { border-color: var(--brand-maroon); }
+  .bg-brand-maroon { background-color: var(--brand-maroon) !important; }
+  .text-brand-maroon { color: var(--brand-maroon) !important; }
+  .border-brand-maroon { border-color: var(--brand-maroon) !important; }
 
-  .bg-brand-whatsapp { background-color: var(--brand-whatsapp); }
-  .text-brand-whatsapp { color: var(--brand-whatsapp); }
+  .bg-brand-whatsapp { background-color: var(--brand-whatsapp) !important; }
+  .text-brand-whatsapp { color: var(--brand-whatsapp) !important; }
+
+  /* Tailwind v3 Modern Opacities */
+  .bg-white\/10 { background-color: rgba(255, 255, 255, 0.1) !important; }
+  .bg-white\/20 { background-color: rgba(255, 255, 255, 0.2) !important; }
+  .bg-black\/40 { background-color: rgba(0, 0, 0, 0.4) !important; }
+  .bg-black\/50 { background-color: rgba(0, 0, 0, 0.5) !important; }
+  .bg-black\/60 { background-color: rgba(0, 0, 0, 0.6) !important; }
+  .border-white\/10 { border-color: rgba(255, 255, 255, 0.1) !important; }
+  .border-white\/20 { border-color: rgba(255, 255, 255, 0.2) !important; }
+  .border-white\/30 { border-color: rgba(255, 255, 255, 0.3) !important; }
+  .border-brand-maroon\/20 { border-color: rgba(168, 48, 82, 0.2) !important; }
+  .border-brand-maroon\/30 { border-color: rgba(168, 48, 82, 0.3) !important; }
+  .border-brand-maroon\/40 { border-color: rgba(168, 48, 82, 0.4) !important; }
+
+  /* Viewport & Arbitrary Heights */
+  .h-\[68vh\] { height: 68vh !important; }
+  .min-h-\[560px\] { min-height: 560px !important; }
+  .h-\[340px\] { height: 340px !important; }
+  .min-h-\[320px\] { min-height: 320px !important; }
+  
+  /* Aspect Ratios */
+  .aspect-square { aspect-ratio: 1 / 1 !important; }
+  
+  /* Backdrop Blur & Utilities */
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
 
   .hide-scrollbar::-webkit-scrollbar { display: none; }
   .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
@@ -73,13 +102,8 @@
     color: #ffffff !important;
     border-color: var(--brand-blue) !important;
   }
-
-  .backdrop-blur-md {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-  }
 </style>
-
+  
 <!-- Structured Data Schema for SEO and Search Visibility -->
 <script type="application/ld+json">
 {
